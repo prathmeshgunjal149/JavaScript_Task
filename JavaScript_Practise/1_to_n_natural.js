@@ -520,7 +520,7 @@ function CheckArmStronggg()
 
      }
 
-
+_
   }
   alert("These Are The All "+arm.join(" , "));
 }
@@ -635,5 +635,18 @@ function StrongNumberCheck()
 }
 
 //Write a C program to print Fibonacci series up to n terms.
+function FibonacciSeries()
+{
+  let n = prompt("Enter the number of terms for the Fibonacci series: ");
+  let num = parseInt(n);
+  let fibSeries = [0, 1];
+  for (let i = 2; i <= num; i++) {
+    let nextTerm = fibSeries[i - 1] + fibSeries[i - 2];
+    fibSeries.push(nextTerm);
+    }
+    alert("Fibonacci Series up to " + num + " terms: " + fibSeries
+      .join(", "));
+      }
+      
 
 
